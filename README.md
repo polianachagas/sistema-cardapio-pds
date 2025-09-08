@@ -344,4 +344,4 @@ Para dúvidas e suporte:
 
 ---
 
-Feito com ❤️ por Gabriel Nogueira - Sistema de Cardápio Digital
+Feito com ❤️ por Gabriel Nogueira Motta e Silva, Poliana Rezende Chagas, André Noro Crivellenti, Felipe Moneda Gilioli Vitor Hugo Ribeiro Franco & Izzy - Sistema de Cardápio Digital
