@@ -4,9 +4,7 @@ import dotenv from 'dotenv';
 // Load environment variables
 dotenv.config();
 
-/**
- * Environment variables validation schema
- */
+//Environment variables validation schema
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   PORT: z.string().transform(Number).default('3001'),
@@ -28,9 +26,7 @@ const envSchema = z.object({
   UPLOAD_PATH: z.string().default('uploads')
 });
 
-/**
- * Validated environment configuration
- */
+//Validated environment configuration
 class EnvConfig {
   private static instance: EnvConfig;
   private config: z.infer<typeof envSchema>;
@@ -102,9 +98,7 @@ class EnvConfig {
     };
   }
 
-  /**
-   * Get all configuration as object
-   */
+ //Get all configuration as object
   getAll() {
     return {
       nodeEnv: this.nodeEnv,

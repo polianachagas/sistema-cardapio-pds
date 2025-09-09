@@ -13,9 +13,7 @@ import productRoutes from './routes/products';
 import orderRoutes from './routes/orders';
 import uploadRoutes from './routes/upload';
 
-/**
- * Express application setup
- */
+//Express application setup
 const app = express();
 
 // Security middleware
