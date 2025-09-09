@@ -3,9 +3,7 @@ import { envConfig } from './config/env';
 
 const PORT = envConfig.port;
 
-/**
- * Start the server
- */
+//Start the server
 const server = app.listen(PORT, () => {
   console.log(`🚀 Digital Menu API Server running on port ${PORT}`);
   console.log(`📊 Environment: ${envConfig.nodeEnv}`);
@@ -13,9 +11,7 @@ const server = app.listen(PORT, () => {
   console.log(`📖 API Documentation: http://localhost:${PORT}/api/v1/health`);
 });
 
-/**
- * Graceful shutdown handler
- */
+//Graceful shutdown handler
 const gracefulShutdown = (signal: string) => {
   console.log(`\n⚠️  Received ${signal}. Starting graceful shutdown...`);
   
